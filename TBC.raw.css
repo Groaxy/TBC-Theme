@@ -43,6 +43,34 @@ body:before {
 /* In Chat objects */
 .userSettingsAccount-2WOnTW .flexChild-1KGW5q div:nth-of-type(2) .viewBody-14sCmR:not(:hover) {
 	filter: blur(5px); }
+.userSettingsSecurity-1hjwAn .flexChild-1KGW5q div:nth-of-type(2) .flex-vertical:not(:hover) {
+	filter: blur(5px); }
+/* Hide blocked people's messages */
+div.message-group-blocked-btn, .theme-dark .messages-wrapper .messages .message-group-blocked, .theme-dark .messages-wrapper .messages .message-group-blocked.revealed{
+    display:none!important;
+}
+	
+/*Nitro Tag*/
+.avatar-large[style*="/a_"]+.comment .username-wrapper:before {
+    background: url('https://canary.discordapp.com/assets/65f0a0df5563e21de7b1aeeafaf31d78.svg') 50% 50% / contain no-repeat;
+    float:left;
+    content: '';
+    width: 21px;
+    height: 16px;
+    margin: 0 5px 0 -5px;
+}
+.avatar-small[style*="/a_"]+.member-inner .member-username:before {
+    background: url('https://canary.discordapp.com/assets/65f0a0df5563e21de7b1aeeafaf31d78.svg') 50% 50% / contain no-repeat;
+    float:left;
+    content: '';
+    width: 21px;
+    height: 16px;
+    margin: 0 5px 0 -5px;
+}
+
+.member-owner-icon {
+    display: none;
+}
 .message-group .comment .markup pre,
 .inline {
 	background: rgba(0,0,0,.5) !important;
@@ -591,7 +619,7 @@ div[class*="statusOnline-"]  {
 }
 
 /* Breakfast Club */
-.channel-members .member .avatar-small:-webkit-any([style*="305180184712183810"],[style*="342144602196934666"],[style*="200441902372225024"],[style*="285164362816159745"],[style*="159025984971079680"],[style*="249279952225042432"],[style*="209162576389472257"],[style*="133347437304610816"],[style*="328368410360676353"]) ~ .member-inner .member-username .member-username-inner::after {
+.channel-members .member .avatar-small:-webkit-any([style*="305180184712183810"],[style*="342144602196934666"],[style*="200441902372225024"],[style*="285164362816159745"],[style*="159025984971079680"],[style*="249279952225042432"],[style*="209162576389472257"],[style*="133347437304610816"],[style*="328368410360676353"],[style*="238781972271464451"]) ~ .member-inner .member-username .member-username-inner::after {
 	content: "TBC";
 	--badgecolor: 255, 255, 255;
 	border-color: rgb(var(--badgecolor));
@@ -648,6 +676,15 @@ div[class*="statusOnline-"]  {
 	color: rgb(var(--badgecolor));
 	background: rgba(var(--badgecolor), 0.0980392);
 
+}
+
+/* Mojo */
+.message-group:not(.compact) .avatar-large:-webkit-any([style*="238781972271464451"]) ~ .comment .message h2 span.username-wrapper::after {
+	content: "Mojo";
+	--badgecolor: 148, 0, 211;
+	border-color: rgb(var(--badgecolor));
+	color: rgb(var(--badgecolor));
+	background: rgba(var(--badgecolor), 0.0980392);
 }
 
 /* Poptart */
