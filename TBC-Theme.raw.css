@@ -10,11 +10,11 @@ body:before {
 	background-size: cover;
 	background-position: center;
 	z-index: -100;
-	opacity: 0.6;
+	opacity: 0.97;
 }
 
 #app-mount:before {
-	content: 'The Breakfast Club';
+	content: 'GAME OVER';
 	font-family: 'Press Start 2P';
 	position: absolute;
 	width: 100%;
@@ -23,13 +23,11 @@ body:before {
 	text-align: center;
 	font-size: 80px;
 	z-index: -99;
-	background: -webkit-linear-gradient(rgb(255, 0, 255) 45%, rgba(255, 255, 255, 0) 55% );
+	background: -webkit-linear-gradient(#c00 45%, #00f 55% );
 	-webkit-background-clip: text;
 	color: transparent;
 	text-shadow: -2px -2px 0px rgba(0,0,0,.8);
 }
-.userSettingsAccount-2WOnTW .flexChild-1KGW5q div:nth-of-type(2) .viewBody-14sCmR:not(:hover) {
-	filter: blur(5px); }
 
 /***
  *      _______
@@ -329,30 +327,29 @@ div.mask-2vyqAW, div.maskProfile-MeBve8{
 }
 
 div[class*="popout-"] > div [class*="avatarStatus-"]{
-	margin: 0 0 0 0 !important;
-	position: relative !important;
-	right: 10px !important;
-	top: -100px;
-	height: 94px !important;
-	width: 94px !important;
-	border-radius: 50% !important;
-	background-color: transparent !important;
-	border-width: 8px !important;
-	border-style: solid !important;
-	animation: rainbow 4s infinite linear !important;
-  }
+  margin: 0 0 0 0 !important;
+  position: relative !important;
+  right: 10px !important;
+  top: -100px;
+  height: 94px !important;
+  width: 94px !important;
+  border-radius: 50% !important;
+  background-color: transparent !important;
+  border-width: 8px !important;
+  border-style: solid !important;
+}
 
 .avatar-small .status{
-	margin: 0 0 0 0 !important;
-	right: 2px !important;
-	top: -2px;
-	position: relative !important;
-	height: 30px !important;
-	width: 30px !important;
-	border-radius: 50% !important;
-	background-color: transparent !important;
-	border-width: 2px !important;
-	border-style: solid !important;
+  margin: 0 0 0 0 !important;
+  right: 2px !important;
+  top: -2px;
+  position: relative !important;
+  height: 30px !important;
+  width: 30px !important;
+  border-radius: 50% !important;
+  background-color: transparent !important;
+  border-width: 2px !important;
+  border-style: solid !important;
 }
 
 .avatar-small .status-streaming,
@@ -428,14 +425,14 @@ div[class*="statusOnline-"]  {
 }
 .colorDefaultText-2v6rRX,
 .colorDefaultVoice-1x4dEl {
-	color: gray;
-	stroke: gray;
+	color: white;
+	stroke: white;
 }
 
 .colorUnreadText-1KwCnP,
 .colorUnreadVoice-1Ztv9I {
-	color: rgb(0, 255, 255);
-	stroke: rgb(0,255, 255);
+	color: rgb(255,98,98);
+	stroke: rgb(255,98,98);
 }
 
 .colorLockedText-2onHWv,
@@ -446,8 +443,8 @@ div[class*="statusOnline-"]  {
 
 .colorSelectedVoice-ieXC3Z,
 .colorSelectedText-3YhFC6 {
-	color: rgb(255, 0, 255);
-	stroke: rgb(255,0,255);
+	color: rgb(255,255,0);
+	stroke: rgb(255,255,0);
 }
 
 .colorMutedText-2DBGZ2 {
@@ -491,199 +488,99 @@ div[class*="statusOnline-"]  {
  *                           |_|              |_|
  */
 
- .message-group .avatar-large ~ .comment .message h2 span.username-wrapper::after,
- .channel-members .member .avatar-small ~ .member-inner .member-username .member-username-inner::after {
-	 border-radius: 2px;
-	 border: 1px solid;
-	 margin-left: 6px;
-	 font-size: 10px;
-	 font-weight: 600;
-	 text-transform: uppercase;
-	 vertical-align: bottom;
-	 padding: 1px 2px;
-	 line-height: 16px;
-	 flex-shrink: 0;
-	 -webkit-flex-shrink: 0;
-	 opacity: 1;
- }
- 
- /* Me */
- 
- .message-group:not(.compact) .avatar-large:-webkit-any([style*="261538420952662016"]) ~ .comment .message h2 span.username-wrapper::after,
- .channel-members .member .avatar-small:-webkit-any([style*="261538420952662016"]) ~ .member-inner .member-username .member-username-inner::after {
-	 content: "Theme Dev";
-	 --badgecolor: 63, 162, 218;
-	 border-color: rgb(var(--badgecolor));
-	 color: rgb(var(--badgecolor));
-	 background: rgba(var(--badgecolor), 0.0980392);
- }
- 
- /* BD Mentions */
- 
- .message-group:not(.compact) .avatar-large:-webkit-any([style*="81388395867156480"]) ~ .comment .message h2 span.username-wrapper::after,
- .channel-members .member .avatar-small:-webkit-any([style*="81388395867156480"]) ~ .member-inner .member-username .member-username-inner::after {
-	 content: "BD Creator";
-	 --badgecolor: 52, 152, 219;
-	 border-color: rgb(var(--badgecolor));
-	 color: rgb(var(--badgecolor));
-	 background: rgba(var(--badgecolor), 0.0980392);
- }
- 
- .message-group:not(.compact) .avatar-large:-webkit-any([style*="235302947058089984"]) ~ .comment .message h2 span.username-wrapper::after,
- .channel-members .member .avatar-small:-webkit-any([style*="235302947058089984"]) ~ .member-inner .member-username .member-username-inner::after {
-	 content: "Best BD Mod";
-	 --badgecolor: 46, 204, 113;
-	 border-color: rgb(var(--badgecolor));
-	 color: rgb(var(--badgecolor));
-	 background: rgba(var(--badgecolor), 0.0980392);
- }
- 
- .message-group:not(.compact) .avatar-large:-webkit-any([style*="219363409097916416"]) ~ .comment .message h2 span.username-wrapper::after,
- .channel-members .member .avatar-small:-webkit-any([style*="219363409097916416"]) ~ .member-inner .member-username .member-username-inner::after {
-	 content: "circular";
-	 --badgecolor: 201, 63, 115;
-	 border-color: rgb(var(--badgecolor));
-	 color: rgb(var(--badgecolor));
-	 background: rgba(var(--badgecolor), 0.0980392);
- }
- 
- /* Tatsumaki Mentions */
- 
- .message-group:not(.compact) .avatar-large:-webkit-any([style*="131904411789164544"]) ~ .comment .message h2 span.username-wrapper::after,
- .channel-members .member .avatar-small:-webkit-any([style*="131904411789164544"]) ~ .member-inner .member-username .member-username-inner::after {
-	 content: "Tatsu Creator";
-	 --badgecolor: 233, 30, 99;
-	 border-color: rgb(var(--badgecolor));
-	 color: rgb(var(--badgecolor));
-	 background: rgba(var(--badgecolor), 0.0980392);
- }
- 
- .message-group:not(.compact) .avatar-large:-webkit-any([style*="219150768744300545"]) ~ .comment .message h2 span.username-wrapper::after,
- .channel-members .member .avatar-small:-webkit-any([style*="219150768744300545"]) ~ .member-inner .member-username .member-username-inner::after {
-	 content: "Best Tatsu support";
-	 --badgecolor: 187, 97, 226;
-	 border-color: rgb(var(--badgecolor));
-	 color: rgb(var(--badgecolor));
-	 background: rgba(var(--badgecolor), 0.0980392);
- }
- 
- /* Nice ppl */
- 
- .message-group:not(.compact) .avatar-large:-webkit-any([style*="221087028995948546"],[style*="142410465027293184"],[style*="291600217726517248"],[style*="233611560545812480"]) ~ .comment .message h2 span.username-wrapper::after,
- .channel-members .member .avatar-small:-webkit-any([style*="221087028995948546"],[style*="142410465027293184"],[style*="291600217726517248"],[style*="233611560545812480"]) ~ .member-inner .member-username .member-username-inner::after {
-	 content: "Nice person";
-	 --badgecolor: 255, 255, 255;
-	 border-color: rgb(var(--badgecolor));
-	 color: rgb(var(--badgecolor));
-	 background: rgba(var(--badgecolor), 0.0980392);
- }
- 
- /* Beta Tester */
- 
- .message-group:not(.compact) .avatar-large:-webkit-any([style*="80593258903773184"]) ~ .comment .message h2 span.username-wrapper::after,
- .channel-members .member .avatar-small:-webkit-any([style*="80593258903773184"]) ~ .member-inner .member-username .member-username-inner::after {
-	 content: "Beta tester";
-	 --badgecolor: 255, 255, 255;
-	 border-color: rgb(var(--badgecolor));
-	 color: rgb(var(--badgecolor));
-	 background: rgba(var(--badgecolor), 0.0980392);
- 
- }
- 
- /* Breakfast Club */
+.message-group .avatar-large ~ .comment .message h2 span.username-wrapper::after,
+.channel-members .member .avatar-small ~ .member-inner .member-username .member-username-inner::after {
+	border-radius: 2px;
+	border: 1px solid;
+	margin-left: 6px;
+	font-size: 10px;
+	font-weight: 600;
+	text-transform: uppercase;
+	vertical-align: bottom;
+	padding: 1px 2px;
+	line-height: 16px;
+	flex-shrink: 0;
+	-webkit-flex-shrink: 0;
+	opacity: 1;
+}
 
- .channel-members .member .avatar-small:-webkit-any([style*="305180184712183810"],[style*="342144602196934666"],[style*="200441902372225024"],[style*="285164362816159745"],[style*="159025984971079680"],[style*="249279952225042432"],[style*="209162576389472257"],[style*="133347437304610816"],[style*="328368410360676353"]) ~ .member-inner .member-username .member-username-inner::after {
-	content: "TBC";
+/* Me */
+
+.message-group:not(.compact) .avatar-large:-webkit-any([style*="261538420952662016"]) ~ .comment .message h2 span.username-wrapper::after,
+.channel-members .member .avatar-small:-webkit-any([style*="261538420952662016"]) ~ .member-inner .member-username .member-username-inner::after {
+	content: "Theme Dev";
+	--badgecolor: 63, 162, 218;
+	border-color: rgb(var(--badgecolor));
+	color: rgb(var(--badgecolor));
+	background: rgba(var(--badgecolor), 0.0980392);
+}
+
+/* BD Mentions */
+
+.message-group:not(.compact) .avatar-large:-webkit-any([style*="81388395867156480"]) ~ .comment .message h2 span.username-wrapper::after,
+.channel-members .member .avatar-small:-webkit-any([style*="81388395867156480"]) ~ .member-inner .member-username .member-username-inner::after {
+	content: "BD Creator";
+	--badgecolor: 52, 152, 219;
+	border-color: rgb(var(--badgecolor));
+	color: rgb(var(--badgecolor));
+	background: rgba(var(--badgecolor), 0.0980392);
+}
+
+.message-group:not(.compact) .avatar-large:-webkit-any([style*="235302947058089984"]) ~ .comment .message h2 span.username-wrapper::after,
+.channel-members .member .avatar-small:-webkit-any([style*="235302947058089984"]) ~ .member-inner .member-username .member-username-inner::after {
+	content: "Best BD Mod";
+	--badgecolor: 46, 204, 113;
+	border-color: rgb(var(--badgecolor));
+	color: rgb(var(--badgecolor));
+	background: rgba(var(--badgecolor), 0.0980392);
+}
+
+.message-group:not(.compact) .avatar-large:-webkit-any([style*="219363409097916416"]) ~ .comment .message h2 span.username-wrapper::after,
+.channel-members .member .avatar-small:-webkit-any([style*="219363409097916416"]) ~ .member-inner .member-username .member-username-inner::after {
+	content: "circular";
+	--badgecolor: 201, 63, 115;
+	border-color: rgb(var(--badgecolor));
+	color: rgb(var(--badgecolor));
+	background: rgba(var(--badgecolor), 0.0980392);
+}
+
+/* Tatsumaki Mentions */
+
+.message-group:not(.compact) .avatar-large:-webkit-any([style*="131904411789164544"]) ~ .comment .message h2 span.username-wrapper::after,
+.channel-members .member .avatar-small:-webkit-any([style*="131904411789164544"]) ~ .member-inner .member-username .member-username-inner::after {
+	content: "Tatsu Creator";
+	--badgecolor: 233, 30, 99;
+	border-color: rgb(var(--badgecolor));
+	color: rgb(var(--badgecolor));
+	background: rgba(var(--badgecolor), 0.0980392);
+}
+
+.message-group:not(.compact) .avatar-large:-webkit-any([style*="219150768744300545"]) ~ .comment .message h2 span.username-wrapper::after,
+.channel-members .member .avatar-small:-webkit-any([style*="219150768744300545"]) ~ .member-inner .member-username .member-username-inner::after {
+	content: "Best Tatsu support";
+	--badgecolor: 187, 97, 226;
+	border-color: rgb(var(--badgecolor));
+	color: rgb(var(--badgecolor));
+	background: rgba(var(--badgecolor), 0.0980392);
+}
+
+/* Nice ppl */
+
+.message-group:not(.compact) .avatar-large:-webkit-any([style*="221087028995948546"],[style*="142410465027293184"],[style*="291600217726517248"],[style*="233611560545812480"]) ~ .comment .message h2 span.username-wrapper::after,
+.channel-members .member .avatar-small:-webkit-any([style*="221087028995948546"],[style*="142410465027293184"],[style*="291600217726517248"],[style*="233611560545812480"]) ~ .member-inner .member-username .member-username-inner::after {
+	content: "Nice person";
 	--badgecolor: 255, 255, 255;
 	border-color: rgb(var(--badgecolor));
 	color: rgb(var(--badgecolor));
 	background: rgba(var(--badgecolor), 0.0980392);
-
 }
 
-/* Regina */
-.message-group:not(.compact) .avatar-large:-webkit-any([style*="305180184712183810"]) ~ .comment .message h2 span.username-wrapper::after {
-		content: "Regina";
-		--badgecolor: 115, 73, 207;
-		border-color: rgb(var(--badgecolor));
-		color: rgb(var(--badgecolor));
-		background: rgba(var(--badgecolor), 0.0980392);
-	
-}
+/* Beta Tester */
 
-/* Razor */
-.message-group:not(.compact) .avatar-large:-webkit-any([style*="342144602196934666"]) ~ .comment .message h2 span.username-wrapper::after {
-		content: "Razor";
-		--badgecolor: 210, 35, 20;
-		border-color: rgb(var(--badgecolor));
-		color: rgb(var(--badgecolor));
-		background: rgba(var(--badgecolor), 0.0980392);
-	
-}
-
-/* Jazzy */
-.message-group:not(.compact) .avatar-large:-webkit-any([style*="285164362816159745"]) ~ .comment .message h2 span.username-wrapper::after {
-		content: "Jazzy";
-		--badgecolor: 21, 171, 209;
-		border-color: rgb(var(--badgecolor));
-		color: rgb(var(--badgecolor));
-		background: rgba(var(--badgecolor), 0.0980392);
-	
-}
-
-/* Emo */
-.message-group:not(.compact) .avatar-large:-webkit-any([style*="209162576389472257"]) ~ .comment .message h2 span.username-wrapper::after {
-		content: "Emo";
-		--badgecolor: 0, 0, 0;
-		border-color: rgb(var(--badgecolor));
-		color: rgb(var(--badgecolor));
-		background: rgba(var(--badgecolor), 0.0980392);
-	
-	}
-/* Flea */
-.message-group:not(.compact) .avatar-large:-webkit-any([style*="249279952225042432"]) ~ .comment .message h2 span.username-wrapper::after {
-		content: "Flea";
-		--badgecolor: 255, 255, 0;
-		border-color: rgb(var(--badgecolor));
-		color: rgb(var(--badgecolor));
-		background: rgba(var(--badgecolor), 0.0980392);
-	
-}
-
-/* Celeste */
-.message-group:not(.compact) .avatar-large:-webkit-any([style*="133347437304610816"]) ~ .comment .message h2 span.username-wrapper::after {
-		content: "Celeste";
-		--badgecolor: 153, 76, 0;
-		border-color: rgb(var(--badgecolor));
-		color: rgb(var(--badgecolor));
-		background: rgba(var(--badgecolor), 0.0980392);
-	
-}
-
-/* Poptart */
-.message-group:not(.compact) .avatar-large:-webkit-any([style*="200441902372225024"]) ~ .comment .message h2 span.username-wrapper::after {
-	content: "Poptart";
-	--badgecolor: 220, 181, 233;
-	border-color: rgb(var(--badgecolor));
-	color: rgb(var(--badgecolor));
-	background: rgba(var(--badgecolor), 0.0980392);
-
-}
-
-/* Elkenn */
-.message-group:not(.compact) .avatar-large:-webkit-any([style*="328368410360676353"]) ~ .comment .message h2 span.username-wrapper::after {
-	content: "Elkenn";
-	--badgecolor: 4, 133, 255;
-	border-color: rgb(var(--badgecolor));
-	color: rgb(var(--badgecolor));
-	background: rgba(var(--badgecolor), 0.0980392);
-
-}
-
-/* Groaxy */
-.message-group:not(.compact) .avatar-large:-webkit-any([style*="159025984971079680"]) ~ .comment .message h2 span.username-wrapper::after {
-	content: "Groaxy";
-	--badgecolor: 200, 0, 200;
+.message-group:not(.compact) .avatar-large:-webkit-any([style*="80593258903773184"]) ~ .comment .message h2 span.username-wrapper::after,
+.channel-members .member .avatar-small:-webkit-any([style*="80593258903773184"]) ~ .member-inner .member-username .member-username-inner::after {
+	content: "Beta tester";
+	--badgecolor: 255, 255, 255;
 	border-color: rgb(var(--badgecolor));
 	color: rgb(var(--badgecolor));
 	background: rgba(var(--badgecolor), 0.0980392);
