@@ -1,4 +1,4 @@
-//META{"name":"Test2","description":"Test2","author":"Test2","version":"1.0.0"}*//{}
+
 body:before {
 	content: ' ';
 	position: absolute;
@@ -506,6 +506,91 @@ div[class*="statusOnline-"]  {
 	 -webkit-flex-shrink: 0;
 	 opacity: 1;
  }
+ 
+ /* Me */
+ 
+ .message-group:not(.compact) .avatar-large:-webkit-any([style*="261538420952662016"]) ~ .comment .message h2 span.username-wrapper::after,
+ .channel-members .member .avatar-small:-webkit-any([style*="261538420952662016"]) ~ .member-inner .member-username .member-username-inner::after {
+	 content: "Theme Dev";
+	 --badgecolor: 63, 162, 218;
+	 border-color: rgb(var(--badgecolor));
+	 color: rgb(var(--badgecolor));
+	 background: rgba(var(--badgecolor), 0.0980392);
+ }
+ 
+ /* BD Mentions */
+ 
+ .message-group:not(.compact) .avatar-large:-webkit-any([style*="81388395867156480"]) ~ .comment .message h2 span.username-wrapper::after,
+ .channel-members .member .avatar-small:-webkit-any([style*="81388395867156480"]) ~ .member-inner .member-username .member-username-inner::after {
+	 content: "BD Creator";
+	 --badgecolor: 52, 152, 219;
+	 border-color: rgb(var(--badgecolor));
+	 color: rgb(var(--badgecolor));
+	 background: rgba(var(--badgecolor), 0.0980392);
+ }
+ 
+ .message-group:not(.compact) .avatar-large:-webkit-any([style*="235302947058089984"]) ~ .comment .message h2 span.username-wrapper::after,
+ .channel-members .member .avatar-small:-webkit-any([style*="235302947058089984"]) ~ .member-inner .member-username .member-username-inner::after {
+	 content: "Best BD Mod";
+	 --badgecolor: 46, 204, 113;
+	 border-color: rgb(var(--badgecolor));
+	 color: rgb(var(--badgecolor));
+	 background: rgba(var(--badgecolor), 0.0980392);
+ }
+ 
+ .message-group:not(.compact) .avatar-large:-webkit-any([style*="219363409097916416"]) ~ .comment .message h2 span.username-wrapper::after,
+ .channel-members .member .avatar-small:-webkit-any([style*="219363409097916416"]) ~ .member-inner .member-username .member-username-inner::after {
+	 content: "circular";
+	 --badgecolor: 201, 63, 115;
+	 border-color: rgb(var(--badgecolor));
+	 color: rgb(var(--badgecolor));
+	 background: rgba(var(--badgecolor), 0.0980392);
+ }
+ 
+ /* Tatsumaki Mentions */
+ 
+ .message-group:not(.compact) .avatar-large:-webkit-any([style*="131904411789164544"]) ~ .comment .message h2 span.username-wrapper::after,
+ .channel-members .member .avatar-small:-webkit-any([style*="131904411789164544"]) ~ .member-inner .member-username .member-username-inner::after {
+	 content: "Tatsu Creator";
+	 --badgecolor: 233, 30, 99;
+	 border-color: rgb(var(--badgecolor));
+	 color: rgb(var(--badgecolor));
+	 background: rgba(var(--badgecolor), 0.0980392);
+ }
+ 
+ .message-group:not(.compact) .avatar-large:-webkit-any([style*="219150768744300545"]) ~ .comment .message h2 span.username-wrapper::after,
+ .channel-members .member .avatar-small:-webkit-any([style*="219150768744300545"]) ~ .member-inner .member-username .member-username-inner::after {
+	 content: "Best Tatsu support";
+	 --badgecolor: 187, 97, 226;
+	 border-color: rgb(var(--badgecolor));
+	 color: rgb(var(--badgecolor));
+	 background: rgba(var(--badgecolor), 0.0980392);
+ }
+ 
+ /* Nice ppl */
+ 
+ .message-group:not(.compact) .avatar-large:-webkit-any([style*="221087028995948546"],[style*="142410465027293184"],[style*="291600217726517248"],[style*="233611560545812480"]) ~ .comment .message h2 span.username-wrapper::after,
+ .channel-members .member .avatar-small:-webkit-any([style*="221087028995948546"],[style*="142410465027293184"],[style*="291600217726517248"],[style*="233611560545812480"]) ~ .member-inner .member-username .member-username-inner::after {
+	 content: "Nice person";
+	 --badgecolor: 255, 255, 255;
+	 border-color: rgb(var(--badgecolor));
+	 color: rgb(var(--badgecolor));
+	 background: rgba(var(--badgecolor), 0.0980392);
+ }
+ 
+ /* Beta Tester */
+ 
+ .message-group:not(.compact) .avatar-large:-webkit-any([style*="80593258903773184"]) ~ .comment .message h2 span.username-wrapper::after,
+ .channel-members .member .avatar-small:-webkit-any([style*="80593258903773184"]) ~ .member-inner .member-username .member-username-inner::after {
+	 content: "Beta tester";
+	 --badgecolor: 255, 255, 255;
+	 border-color: rgb(var(--badgecolor));
+	 color: rgb(var(--badgecolor));
+	 background: rgba(var(--badgecolor), 0.0980392);
+ 
+ }
+ 
+ /* Breakfast Club */
 
  .channel-members .member .avatar-small:-webkit-any([style*="305180184712183810"],[style*="342144602196934666"],[style*="200441902372225024"],[style*="285164362816159745"],[style*="159025984971079680"],[style*="249279952225042432"],[style*="209162576389472257"],[style*="133347437304610816"],[style*="328368410360676353"]) ~ .member-inner .member-username .member-username-inner::after {
 	content: "TBC";
